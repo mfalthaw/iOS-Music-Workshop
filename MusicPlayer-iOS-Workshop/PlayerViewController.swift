@@ -20,7 +20,7 @@ class PlayerViewController: UIViewController, MediaPlayerProtocol {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         mediaPlayer.setup()
-        
+        progressViewVar.progress = 0
     }
     
     func displaySong(song: Song) {
