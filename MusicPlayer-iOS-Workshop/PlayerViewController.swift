@@ -24,11 +24,11 @@ class PlayerViewController: UIViewController, MediaPlayerProtocol {
     }
     
     func displaySong(song: Song) {
-        
+        imageViewVar.image = song.image
     }
     
     func displayCompletionPercentage(percentComplete: Float) {
-        
+        progressViewVar.progress = percentComplete
     }
 }
 
