@@ -11,6 +11,8 @@ import UIKit
 class PlayerViewController: UIViewController, MediaPlayerProtocol {
     
     @IBOutlet var mediaPlayer: MediaPlayer!
+    @IBOutlet var imageViewVar: UIImageView!
+    @IBOutlet var progressViewVar: UIProgressView!
     
     
     
@@ -22,11 +24,11 @@ class PlayerViewController: UIViewController, MediaPlayerProtocol {
     }
     
     func displaySong(song: Song) {
-    
+        
     }
     
     func displayCompletionPercentage(percentComplete: Float) {
-
+        
     }
 }
 
