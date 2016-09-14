@@ -19,6 +19,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5x-cA-gb4">
                                 <rect key="frame" x="175" y="464" width="24" height="25"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Play" image="Play"/>
                                 <connections>
                                     <action selector="playMusic" destination="kq7-HP-Bx9" eventType="touchUpInside" id="PiX-Q2-V3o"/>
@@ -31,17 +32,24 @@
                                     <action selector="playNextSong" destination="kq7-HP-Bx9" eventType="touchUpInside" id="BrR-cb-Ud5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgX-ob-DxB">
+                                <rect key="frame" x="63" y="464" width="29" height="25"/>
+                                <state key="normal" title="Back" image="Rewind"/>
+                                <connections>
+                                    <action selector="playPreviousSong" destination="kq7-HP-Bx9" eventType="touchUpInside" id="hnT-Ce-VJA"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ESQ-Su-HMQ">
                                 <rect key="frame" x="63" y="196" width="248" height="229"/>
                             </imageView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Oba-gh-Gsg">
                                 <rect key="frame" x="63" y="449" width="248" height="2"/>
                             </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgX-ob-DxB">
-                                <rect key="frame" x="63" y="464" width="29" height="25"/>
-                                <state key="normal" title="Back" image="Rewind"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUy-sY-ffA">
+                                <rect key="frame" x="175" y="497" width="24" height="25"/>
+                                <state key="normal" title="Button" image="Pause"/>
                                 <connections>
-                                    <action selector="playPreviousSong" destination="kq7-HP-Bx9" eventType="touchUpInside" id="hnT-Ce-VJA"/>
+                                    <action selector="pauseMusic" destination="kq7-HP-Bx9" eventType="touchUpInside" id="FIp-Zh-IQm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -69,6 +77,7 @@
     </scenes>
     <resources>
         <image name="Fast Forward" width="25" height="25"/>
+        <image name="Pause" width="25" height="25"/>
         <image name="Play" width="25" height="25"/>
         <image name="Rewind" width="25" height="25"/>
     </resources>

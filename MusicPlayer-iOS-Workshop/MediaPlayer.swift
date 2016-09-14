@@ -55,6 +55,10 @@ class MediaPlayer: NSObject {
         }
     }
     
+    @IBAction func pauseMusic() {
+        avPlayer.pause()
+    }
+    
     @IBAction func playNextSong(){
         songIndex = songIndex + 1
         
